@@ -59,6 +59,7 @@ from sklearn.linear_model import LogisticRegression
 classifier=LogisticRegression()
 classifier.fit(text_train,sent_train)
 
+#Predicting the result
 sent_pred=classifier.predict(text_test)
 
 from sklearn.metrics import confusion_matrix
